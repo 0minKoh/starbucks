@@ -245,7 +245,6 @@ header .main-menu .item .item__contents .contents__texture {
   font-size: 12px;
   background-image: url("../images/main_menu_pattern.jpg");
 }
-
 header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
   font-weight: 900;
@@ -267,6 +266,7 @@ header .badges .badge {
   box-shadow: 4px 4px 10px rgba(0,0,0,.15);
   cursor: pointer;
 }
+
 
 /*FOOTER*/
 footer {

@@ -1,13 +1,6 @@
 'use strict'
 
 /**
- * 검색창 제어
- */
-// 검색창 요소(.search) 찾기.
-
-
-
-/**
  * 페이지 스크롤에 따른 요소 제어
  */
 // 페이지 스크롤에 영향을 받는 요소들을 검색!
@@ -58,7 +51,6 @@ const fadeEls = document.querySelectorAll('.visual .fade-in')
 // 나타날 요소들을 하나씩 반복해서 처리!
 fadeEls.forEach(function (fadeEl, index) {
   // 각 요소들을 순서대로(delay) 보여지게 함!
-  // gsap.to(요소, 지속시간, 옵션(실현 특성))
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * .7,
     opacity: 1
@@ -172,10 +164,3 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
     .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 })
-
-
-/**
- * 올해가 몇 년도인지 계산
- */
-const thisYear = document.querySelector('.this-year')
-thisYear.textContent = new Date().getFullYear()

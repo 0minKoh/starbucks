@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * 검색창 제어
  */
@@ -19,8 +21,9 @@ searchInputEl.addEventListener('blur', function () {
   searchInputEl.setAttribute('placeholder', '')
 })
 
+
 /**
  * 올해가 몇 년도인지 계산
  */
- const thisYear = document.querySelector('.this-year')
- thisYear.textContent = new Date().getFullYear()
+const thisYear = document.querySelector('.this-year')
+thisYear.textContent = new Date().getFullYear()
